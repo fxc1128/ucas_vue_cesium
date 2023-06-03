@@ -1,11 +1,12 @@
 <template>
   <div id="cesiumDiv">
     <div id="tools">
-      <el-button type="info" id="pointBtn">画点</el-button>
-      <el-button type="info" id="lineBtn">画线</el-button>
-      <el-button type="info" id="polyBtn">画面</el-button>
-      <el-button type="info" id="rectBtn">画矩形</el-button>
+      <el-button type="info" id="pointBtn">标记点</el-button>
+      <el-button type="info" id="lineBtn">航道绘制</el-button>
+      <el-button type="info" id="polyBtn">风险区绘制</el-button>
+      <el-button type="info" id="rectBtn">安全区绘制</el-button>
       <el-button type="info" id="clearBtn">清除</el-button>
+      <el-button type="info" id="exportBtn">导出</el-button>
     </div>
   </div>
 </template>
@@ -87,6 +88,9 @@ export default {
     $('#clearBtn').bind('click', function () {
       _this.clearHandle();
     });
+    $('#exportBtn').bind('click', function () {
+      _this.exportShape();
+    });
   },
   methods: {
     //画点
@@ -104,7 +108,7 @@ export default {
         _this.viewer.entities.add({
           position: cartesian,
           point: {
-            color: Cesium.Color.RED,
+            color: Cesium.Color.YELLOW,
             pixelSize: 5,
             heightReference: Cesium.HeightReference.CLAMP_TO_GROUND,
           },
@@ -126,7 +130,7 @@ export default {
             polyline: {
               show: true,
               positions: [],
-              material: Cesium.Color.RED,
+              material: Cesium.Color.BLUE,
               width: 3,
             },
           };
@@ -271,10 +275,10 @@ export default {
             _self.shape.entity = _self.viewer.entities.add({
               rectangle: {
                 coordinates: _self.shape.rect,
-                material: Cesium.Color.RED.withAlpha(0.4),
+                material: Cesium.Color.GREEN.withAlpha(0.4),
                 outline: true,
                 outlineWidth: 4,
-                outlineColor: Cesium.Color.RED,
+                outlineColor: Cesium.Color.GREEN,
                 height: 0,
               },
             });
@@ -311,6 +315,77 @@ export default {
       for (var i = 0; i < this.removeImageryLayers.length; i++) {
         this.viewer.imageryLayers.remove(this.removeImageryLayers[i]);
       }
+    },
+    exportShape: function () {
+      // 假设您已经绘制了一些要素并将它们存储在一个名为“entities”的数组中
+      const entities = this.viewer.entities.values;
+
+      // 创建一个空数组来存储要素数据
+      const features = [];
+
+      // 遍历每个要素
+      for (let i = 0; i < entities.length; i++) {
+        const entity = entities[i];
+        let coordinates;
+        let type;
+        if (entity.polyline) {
+          // 线要素
+          type = 'LineString';
+          const positions = entity.polyline.positions.getValue();
+          coordinates = positions.map((position) => {
+            const cartographic = Cesium.Cartographic.fromCartesian(position);
+            const longitude = Cesium.Math.toDegrees(cartographic.longitude);
+            const latitude = Cesium.Math.toDegrees(cartographic.latitude);
+            return [longitude, latitude];
+          });
+        } else if (entity.polygon) {
+          // 面要素
+          type = 'Polygon';
+          const hierarchy = entity.polygon.hierarchy.getValue();
+          coordinates = hierarchy.positions.map((position) => {
+            const cartographic = Cesium.Cartographic.fromCartesian(position);
+            const longitude = Cesium.Math.toDegrees(cartographic.longitude);
+            const latitude = Cesium.Math.toDegrees(cartographic.latitude);
+            return [longitude, latitude];
+          });
+          coordinates = [coordinates];
+        } else if (entity.position) {
+          // 点要素
+          type = 'Point';
+          const position = entity.position.getValue();
+          const cartographic = Cesium.Cartographic.fromCartesian(position);
+          const longitude = Cesium.Math.toDegrees(cartographic.longitude);
+          const latitude = Cesium.Math.toDegrees(cartographic.latitude);
+          coordinates = [longitude, latitude];
+        } else {
+          continue;
+        }
+        // 将要素数据添加到数组中
+        features.push({
+          type: 'Feature',
+          geometry: {
+            type: type,
+            coordinates: coordinates,
+          },
+        });
+      }
+
+      // 创建一个 GeoJSON 对象
+      const geojson = {
+        type: 'FeatureCollection',
+        features: features,
+      };
+
+      // 将 GeoJSON 对象转换为字符串
+      const data = JSON.stringify(geojson);
+
+      // 创建一个 Blob 对象并使用浏览器的下载功能将其保存为文件
+      const blob = new Blob([data], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'features.json';
+      a.click();
     },
     getPointFromWindowPoint(point) {
       if (this.viewer.scene.terrainProvider.constructor.name == 'EllipsoidTerrainProvider') {

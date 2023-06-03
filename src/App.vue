@@ -1,11 +1,11 @@
 <template>
   <div id="app">
     <el-container class="app-out-pannel">
-      <el-header class="sys-header">WebGIS项目</el-header>
+      <el-header class="sys-header">海南自贸港航海保障系统</el-header>
       <el-container class="app-content-pannel">
         <el-aside class="sys-menu">
           <el-menu
-            default-active="1"
+            default-active="2"
             class="el-menu-vertical-demo"
             @select="handleMenuSelect"
             :collapse="true"
@@ -17,15 +17,11 @@
             </el-menu-item>
             <el-menu-item index="2">
               <i class="el-icon-picture-outline"></i>
-              <span slot="title">地图展示</span>
+              <span slot="title">数据</span>
             </el-menu-item>
             <el-menu-item index="3">
               <i class="el-icon-map-location"></i>
               <span slot="title">操作</span>
-            </el-menu-item>
-            <el-menu-item index="4" disabled>
-              <i class="el-icon-setting"></i>
-              <span slot="title">数据管理</span>
             </el-menu-item>
           </el-menu>
         </el-aside>

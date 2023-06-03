@@ -27,25 +27,35 @@ export default {
       'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI2OTkxY2ZlYS01NjQ1LTQwOTktODc4OS1mNTQ3NTk5NGZjY2YiLCJpZCI6MzE4OTUsInNjb3BlcyI6WyJhc3IiLCJnYyJdLCJpYXQiOjE1OTYxMDU3NTl9.MfJB6x_8MAk5sq7VEHu-_OYj4K8ZHdWoirMkjJFvNFg';
     //创建viewer实例
     this.viewer = new Cesium.Viewer('cesiumContainer', {
+      shouldAnimate: true,
+      //控制视图动画播放速度
       animation: false,
-      baseLayerPicker: false,
-      fullscreenButton: false,
+      vrButton: false,
+      //搜索按钮
       geocoder: false,
+      //视角返回初始位置
       homeButton: false,
-      sceneModePicker: false,
-      selectionIndicator: false,
-      timeline: false,
+      //二三维视角选择
+      sceneModePicker: true,
+      //时间线，允许用户选择
+      timeline: true,
+      //导航帮助按钮
       navigationHelpButton: false,
-      infoBox: false,
       navigationInstructionsInitiallyVisible: false,
+      baseLayerPicker: true,
+
+      fullscreenButton: false,
+      selectionIndicator: false,
     });
+    this.viewer.baseLayerPicker.viewModel.selectedImagery =
+      this.viewer.baseLayerPicker.viewModel.imageryProviderViewModels[3];
     this.viewer._cesiumWidget._creditContainer.style.display = 'none'; //去掉logo
-    const viewPosition = [118.77, 32.06];
+    const viewPosition = [109.72, 17.38];
     this.viewer.camera.setView({
-      destination: Cesium.Cartesian3.fromDegrees(...viewPosition, 10000),
+      destination: Cesium.Cartesian3.fromDegrees(...viewPosition, 400000),
       orientation: {
         heading: Cesium.Math.toRadians(0, 0),
-        pitch: Cesium.Math.toRadians(-90),
+        pitch: Cesium.Math.toRadians(-60),
         roll: 0.0,
       },
     });

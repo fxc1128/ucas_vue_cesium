@@ -1,38 +1,56 @@
 /* eslint-disable no-underscore-dangle */
 import * as Cesium from 'cesium/Cesium';
 
-const viewPosition = [116.390404, 39.8800601];
+//const viewPosition = [116.390404, 39.8800601];
+const viewPosition = [109.72, 17.38];
 let geojson;
 
-export const addGeojson = async (viewer) => {
-  const url = 'gugong.json';
-  geojson = await Cesium.GeoJsonDataSource.load(url, {
-    stroke: Cesium.Color.WHITE,
-    fill: Cesium.Color.BLUE.withAlpha(0.3),
-    strokeWidth: 5,
-  });
-  viewer.dataSources.add(geojson);
-  const entities = geojson.entities.values;
-  const colorHash = {};
-  entities.forEach((entity) => {
-    const { name } = entity;
-    let color = colorHash[name];
-    if (!color) {
-      color = Cesium.Color.fromCssColorString(entity.properties.color._value || '#fff');
-      colorHash[name] = color;
-    }
-    entity.polygon.material = color;
-    entity.polygon.outline = false;
-    entity.polygon.extrudedHeight = entity.properties.height._value || 0;
-  });
+export const addGeojson = async (viewer, selected) => {
   viewer.camera.flyTo({
-    destination: Cesium.Cartesian3.fromDegrees(...viewPosition, 1000),
+    destination: Cesium.Cartesian3.fromDegrees(...viewPosition, 400000),
     orientation: {
       heading: Cesium.Math.toRadians(0, 0),
-      pitch: Cesium.Math.toRadians(-20),
+      pitch: Cesium.Math.toRadians(-60),
       roll: 0.0,
     },
   });
+  if (selected.includes('1')) {
+    geojson = await Cesium.GeoJsonDataSource.load('AIS.json', {
+      markerColor: Cesium.Color.BLUE,
+      markerSize: 12,
+    });
+    viewer.dataSources.add(geojson);
+  }
+  if (selected.includes('2')) {
+    geojson = await Cesium.GeoJsonDataSource.load('lubiao.json', {
+      markerColor: Cesium.Color.YELLOW,
+      markerSize: 12,
+    });
+    viewer.dataSources.add(geojson);
+  }
+  if (selected.includes('3')) {
+    geojson = await Cesium.GeoJsonDataSource.load('chenchuan.json', {
+      markerColor: Cesium.Color.CYAN,
+      markerSize: 12,
+    });
+    viewer.dataSources.add(geojson);
+  }
+  if (selected.includes('4')) {
+    geojson = await Cesium.GeoJsonDataSource.load('zhangaiwu.json', {
+      markerColor: Cesium.Color.BROWN,
+      markerSize: 12,
+    });
+    viewer.dataSources.add(geojson);
+  }
+  if (selected.includes('5')) {
+    geojson = await Cesium.GeoJsonDataSource.load('jiaoshi.json', {
+      markerColor: Cesium.Color.BLACK,
+      markerSize: 12,
+    });
+    viewer.dataSources.add(geojson);
+  }
+  //geojson = await Cesium.GeoJsonDataSource.load('AIS.json');
+  //viewer.dataSources.add(geojson);
 };
 
 export const removeGeojson = (viewer) => {

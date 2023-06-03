@@ -3,8 +3,15 @@
     <el-row>
       <el-button type="info" @click="measureLClicked">距离测量</el-button>
       <el-button type="info" @click="measurePClicked">面积测量</el-button>
-      <el-button type="info" @click="clearClicked">清空要素</el-button>
+      <el-button type="info" @click="clearClicked">清空</el-button>
     </el-row>
+    <div id="layerControl">
+      <label><input type="checkbox" value="1" v-model="selectedLayers" />AIS基站</label>
+      <label><input type="checkbox" value="2" v-model="selectedLayers" />航标</label>
+      <label><input type="checkbox" value="3" v-model="selectedLayers" />沉船点</label>
+      <label><input type="checkbox" value="4" v-model="selectedLayers" />障碍物</label>
+      <label><input type="checkbox" value="5" v-model="selectedLayers" />礁石</label>
+    </div>
   </div>
 </template>
 
@@ -25,9 +32,20 @@ export default {
     //保存组件的私有数据
     return {
       earth: undefined,
+      selectedLayers: [],
     };
   },
+  watch: {
+    selectedLayers() {
+      this.updateLayers();
+    },
+  },
   methods: {
+    async updateLayers() {
+      // 移除所有数据源
+      this.earth.dataSources.removeAll();
+      addGeojson(this.earth, this.selectedLayers);
+    },
     measureLClicked() {
       console.log('11');
       measureLine(this.earth);
@@ -69,14 +87,6 @@ export default {
       this.earth.baseLayerPicker.viewModel.selectedImagery =
         this.earth.baseLayerPicker.viewModel.imageryProviderViewModels[6];
       this.earth._cesiumWidget._creditContainer.style.display = 'none';
-
-      addGeojson(this.earth);
-      //let measD = new MeasureDistance(this.earth);
-      //console.log('789', measD);
-      //measD.activate();
-
-      //measureLine(this.earth);
-      //console.log('11');
     },
   },
 };
@@ -91,5 +101,10 @@ export default {
   margin: 0px;
   padding: 0px;
   background-color: #8e8f92;
+}
+#layerControl label {
+  font-family: '微软雅黑', Times, serif;
+  font-size: 14px;
+  color: #ffffff;
 }
 </style>
