@@ -1,0 +1,842 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          108.63673350000005,
+          18.84300030000003
+        ]
+      },
+      "properties": {
+        "OBJECTID_1": 1,
+        "OBJECTID": 19,
+        "SCAMIN": 0,
+        "EXPSOU": " ",
+        "NOBJNM": "感恩角灯塔",
+        "OBJNAM": " ",
+        "QUASOU": " ",
+        "SOUACC": 0,
+        "STATUS": " ",
+        "TECSOU": " ",
+        "NTXTDS": " ",
+        "TXTDSC": " ",
+        "INFORM": " ",
+        "NINFOM": " ",
+        "SORDAT": " ",
+        "SORIND": " ",
+        "Depth": 58,
+        "R": 60
+      },
+      "id": 0
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          108.94541640000006,
+          19.50901650000003
+        ]
+      },
+      "properties": {
+        "OBJECTID_1": 2,
+        "OBJECTID": 20,
+        "SCAMIN": 0,
+        "EXPSOU": " ",
+        "NOBJNM": "儋州海头",
+        "OBJNAM": " ",
+        "QUASOU": " ",
+        "SOUACC": 0,
+        "STATUS": " ",
+        "TECSOU": " ",
+        "NTXTDS": " ",
+        "TXTDSC": " ",
+        "INFORM": " ",
+        "NINFOM": " ",
+        "SORDAT": " ",
+        "SORIND": " ",
+        "Depth": 57,
+        "R": 60
+      },
+      "id": 1
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          109.71008360000008,
+          19.995633600000076
+        ]
+      },
+      "properties": {
+        "OBJECTID_1": 3,
+        "OBJECTID": 21,
+        "SCAMIN": 0,
+        "EXPSOU": " ",
+        "NOBJNM": "临高高山岭",
+        "OBJNAM": " ",
+        "QUASOU": " ",
+        "SOUACC": 0,
+        "STATUS": " ",
+        "TECSOU": " ",
+        "NTXTDS": " ",
+        "TXTDSC": " ",
+        "INFORM": " ",
+        "NINFOM": " ",
+        "SORDAT": " ",
+        "SORIND": " ",
+        "Depth": 56,
+        "R": 60
+      },
+      "id": 2
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          109.36880020000007,
+          18.23005020000005
+        ]
+      },
+      "properties": {
+        "OBJECTID_1": 4,
+        "OBJECTID": 22,
+        "SCAMIN": 0,
+        "EXPSOU": " ",
+        "NOBJNM": "西瑁洲",
+        "OBJNAM": " ",
+        "QUASOU": " ",
+        "SOUACC": 0,
+        "STATUS": " ",
+        "TECSOU": " ",
+        "NTXTDS": " ",
+        "TXTDSC": " ",
+        "INFORM": " ",
+        "NINFOM": " ",
+        "SORDAT": " ",
+        "SORIND": " ",
+        "Depth": 55,
+        "R": 60
+      },
+      "id": 3
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          108.68893310000004,
+          18.50655030000007
+        ]
+      },
+      "properties": {
+        "OBJECTID_1": 5,
+        "OBJECTID": 23,
+        "SCAMIN": 0,
+        "EXPSOU": " ",
+        "NOBJNM": "莺歌咀",
+        "OBJNAM": " ",
+        "QUASOU": " ",
+        "SOUACC": 0,
+        "STATUS": " ",
+        "TECSOU": " ",
+        "NTXTDS": " ",
+        "TXTDSC": " ",
+        "INFORM": " ",
+        "NINFOM": " ",
+        "SORDAT": " ",
+        "SORIND": " ",
+        "Depth": 54,
+        "R": 60
+      },
+      "id": 4
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.97600010000008,
+          20.001450100000056
+        ]
+      },
+      "properties": {
+        "OBJECTID_1": 6,
+        "OBJECTID": 24,
+        "SCAMIN": 0,
+        "EXPSOU": " ",
+        "NOBJNM": "抱虎",
+        "OBJNAM": " ",
+        "QUASOU": " ",
+        "SOUACC": 0,
+        "STATUS": " ",
+        "TECSOU": " ",
+        "NTXTDS": " ",
+        "TXTDSC": " ",
+        "INFORM": " ",
+        "NINFOM": " ",
+        "SORDAT": " ",
+        "SORIND": " ",
+        "Depth": 53,
+        "R": 60
+      },
+      "id": 5
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.59333350000009,
+          19.155666300000064
+        ]
+      },
+      "properties": {
+        "OBJECTID_1": 7,
+        "OBJECTID": 25,
+        "SCAMIN": 0,
+        "EXPSOU": " ",
+        "NOBJNM": "博鳌",
+        "OBJNAM": " ",
+        "QUASOU": " ",
+        "SOUACC": 0,
+        "STATUS": " ",
+        "TECSOU": " ",
+        "NTXTDS": " ",
+        "TXTDSC": " ",
+        "INFORM": " ",
+        "NINFOM": " ",
+        "SORDAT": " ",
+        "SORIND": " ",
+        "Depth": 52,
+        "R": 60
+      },
+      "id": 6
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.05933320000008,
+          18.436833100000058
+        ]
+      },
+      "properties": {
+        "OBJECTID_1": 8,
+        "OBJECTID": 26,
+        "SCAMIN": 0,
+        "EXPSOU": " ",
+        "NOBJNM": "陵水",
+        "OBJNAM": " ",
+        "QUASOU": " ",
+        "SOUACC": 0,
+        "STATUS": " ",
+        "TECSOU": " ",
+        "NTXTDS": " ",
+        "TXTDSC": " ",
+        "INFORM": " ",
+        "NINFOM": " ",
+        "SORDAT": " ",
+        "SORIND": " ",
+        "Depth": 51,
+        "R": 60
+      },
+      "id": 7
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.84568320000005,
+          19.531633200000044
+        ]
+      },
+      "properties": {
+        "OBJECTID_1": 9,
+        "OBJECTID": 27,
+        "SCAMIN": 0,
+        "EXPSOU": " ",
+        "NOBJNM": "清澜",
+        "OBJNAM": " ",
+        "QUASOU": " ",
+        "SOUACC": 0,
+        "STATUS": " ",
+        "TECSOU": " ",
+        "NTXTDS": " ",
+        "TXTDSC": " ",
+        "INFORM": " ",
+        "NINFOM": " ",
+        "SORDAT": " ",
+        "SORIND": " ",
+        "Depth": 50,
+        "R": 60
+      },
+      "id": 8
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.47961640000005,
+          18.777049700000077
+        ]
+      },
+      "properties": {
+        "OBJECTID_1": 10,
+        "OBJECTID": 28,
+        "SCAMIN": 0,
+        "EXPSOU": " ",
+        "NOBJNM": "乌场",
+        "OBJNAM": " ",
+        "QUASOU": " ",
+        "SOUACC": 0,
+        "STATUS": " ",
+        "TECSOU": " ",
+        "NTXTDS": " ",
+        "TXTDSC": " ",
+        "INFORM": " ",
+        "NINFOM": " ",
+        "SORDAT": " ",
+        "SORIND": " ",
+        "Depth": 49,
+        "R": 60
+      },
+      "id": 9
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          108.63264990000005,
+          19.101767000000052
+        ]
+      },
+      "properties": {
+        "OBJECTID_1": 11,
+        "OBJECTID": 29,
+        "SCAMIN": 0,
+        "EXPSOU": " ",
+        "NOBJNM": "八所",
+        "OBJNAM": " ",
+        "QUASOU": " ",
+        "SOUACC": 0,
+        "STATUS": " ",
+        "TECSOU": " ",
+        "NTXTDS": " ",
+        "TXTDSC": " ",
+        "INFORM": " ",
+        "NINFOM": " ",
+        "SORDAT": " ",
+        "SORIND": " ",
+        "Depth": 48,
+        "R": 60
+      },
+      "id": 10
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          109.19470000000007,
+          19.739766400000065
+        ]
+      },
+      "properties": {
+        "OBJECTID_1": 12,
+        "OBJECTID": 30,
+        "SCAMIN": 0,
+        "EXPSOU": " ",
+        "NOBJNM": "洋浦",
+        "OBJNAM": " ",
+        "QUASOU": " ",
+        "SOUACC": 0,
+        "STATUS": " ",
+        "TECSOU": " ",
+        "NTXTDS": " ",
+        "TXTDSC": " ",
+        "INFORM": " ",
+        "NINFOM": " ",
+        "SORDAT": " ",
+        "SORIND": " ",
+        "Depth": 46,
+        "R": 60
+      },
+      "id": 11
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          109.94143330000009,
+          19.991683600000044
+        ]
+      },
+      "properties": {
+        "OBJECTID_1": 13,
+        "OBJECTID": 31,
+        "SCAMIN": 0,
+        "EXPSOU": " ",
+        "NOBJNM": "玉包角",
+        "OBJNAM": " ",
+        "QUASOU": " ",
+        "SOUACC": 0,
+        "STATUS": " ",
+        "TECSOU": " ",
+        "NTXTDS": " ",
+        "TXTDSC": " ",
+        "INFORM": " ",
+        "NINFOM": " ",
+        "SORDAT": " ",
+        "SORIND": " ",
+        "Depth": 45,
+        "R": 60
+      },
+      "id": 12
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.40888310000008,
+          21.187150100000053
+        ]
+      },
+      "properties": {
+        "OBJECTID_1": 14,
+        "OBJECTID": 34,
+        "SCAMIN": 0,
+        "EXPSOU": " ",
+        "NOBJNM": "湛江VTS",
+        "OBJNAM": " ",
+        "QUASOU": " ",
+        "SOUACC": 0,
+        "STATUS": " ",
+        "TECSOU": " ",
+        "NTXTDS": " ",
+        "TXTDSC": " ",
+        "INFORM": " ",
+        "NINFOM": " ",
+        "SORDAT": " ",
+        "SORIND": " ",
+        "Depth": 17,
+        "R": 60
+      },
+      "id": 13
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.60685040000004,
+          20.901316700000052
+        ]
+      },
+      "properties": {
+        "OBJECTID_1": 15,
+        "OBJECTID": 40,
+        "SCAMIN": 0,
+        "EXPSOU": " ",
+        "NOBJNM": "硇洲",
+        "OBJNAM": " ",
+        "QUASOU": " ",
+        "SOUACC": 0,
+        "STATUS": " ",
+        "TECSOU": " ",
+        "NTXTDS": " ",
+        "TXTDSC": " ",
+        "INFORM": " ",
+        "NINFOM": " ",
+        "SORDAT": " ",
+        "SORIND": " ",
+        "Depth": 18,
+        "R": 60
+      },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.51810020000005,
+          20.428616500000032
+        ]
+      },
+      "properties": {
+        "OBJECTID_1": 16,
+        "OBJECTID": 41,
+        "SCAMIN": 0,
+        "EXPSOU": " ",
+        "NOBJNM": "前山",
+        "OBJNAM": " ",
+        "QUASOU": " ",
+        "SOUACC": 0,
+        "STATUS": " ",
+        "TECSOU": " ",
+        "NTXTDS": " ",
+        "TXTDSC": " ",
+        "INFORM": " ",
+        "NINFOM": " ",
+        "SORDAT": " ",
+        "SORIND": " ",
+        "Depth": 19,
+        "R": 60
+      },
+      "id": 15
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.48249970000006,
+          21.04416660000004
+        ]
+      },
+      "properties": {
+        "OBJECTID_1": 17,
+        "OBJECTID": 45,
+        "SCAMIN": 0,
+        "EXPSOU": " ",
+        "NOBJNM": "东简坑里",
+        "OBJNAM": " ",
+        "QUASOU": " ",
+        "SOUACC": 0,
+        "STATUS": " ",
+        "TECSOU": " ",
+        "NTXTDS": " ",
+        "TXTDSC": " ",
+        "INFORM": " ",
+        "NINFOM": " ",
+        "SORDAT": " ",
+        "SORIND": " ",
+        "Depth": 23,
+        "R": 60
+      },
+      "id": 16
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.22696650000006,
+          20.270149900000035
+        ]
+      },
+      "properties": {
+        "OBJECTID_1": 18,
+        "OBJECTID": 46,
+        "SCAMIN": 0,
+        "EXPSOU": " ",
+        "NOBJNM": "海安港",
+        "OBJNAM": " ",
+        "QUASOU": " ",
+        "SOUACC": 0,
+        "STATUS": " ",
+        "TECSOU": " ",
+        "NTXTDS": " ",
+        "TXTDSC": " ",
+        "INFORM": " ",
+        "NINFOM": " ",
+        "SORDAT": " ",
+        "SORIND": " ",
+        "Depth": 24,
+        "R": 60
+      },
+      "id": 17
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          109.09759960000008,
+          21.012883200000033
+        ]
+      },
+      "properties": {
+        "OBJECTID_1": 19,
+        "OBJECTID": 53,
+        "SCAMIN": 0,
+        "EXPSOU": " ",
+        "NOBJNM": "涠洲岛",
+        "OBJNAM": " ",
+        "QUASOU": " ",
+        "SOUACC": 0,
+        "STATUS": " ",
+        "TECSOU": " ",
+        "NTXTDS": " ",
+        "TXTDSC": " ",
+        "INFORM": " ",
+        "NINFOM": " ",
+        "SORDAT": " ",
+        "SORIND": " ",
+        "Depth": 38,
+        "R": 60
+      },
+      "id": 18
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.68459980000006,
+          20.160100200000045
+        ]
+      },
+      "properties": {
+        "OBJECTID_1": 20,
+        "OBJECTID": 58,
+        "SCAMIN": 0,
+        "EXPSOU": " ",
+        "NOBJNM": "木栏头",
+        "OBJNAM": " ",
+        "QUASOU": " ",
+        "SOUACC": 0,
+        "STATUS": " ",
+        "TECSOU": " ",
+        "NTXTDS": " ",
+        "TXTDSC": " ",
+        "INFORM": " ",
+        "NINFOM": " ",
+        "SORDAT": " ",
+        "SORIND": " ",
+        "Depth": 47,
+        "R": 60
+      },
+      "id": 19
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.31418360000004,
+          20.071350100000075
+        ]
+      },
+      "properties": {
+        "OBJECTID_1": 21,
+        "OBJECTID": 59,
+        "SCAMIN": 0,
+        "EXPSOU": " ",
+        "NOBJNM": "白沙门",
+        "OBJNAM": " ",
+        "QUASOU": " ",
+        "SOUACC": 0,
+        "STATUS": " ",
+        "TECSOU": " ",
+        "NTXTDS": " ",
+        "TXTDSC": " ",
+        "INFORM": " ",
+        "NINFOM": " ",
+        "SORDAT": " ",
+        "SORIND": " ",
+        "Depth": 59,
+        "R": 60
+      },
+      "id": 20
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          112.3359670000001,
+          16.832566400000076
+        ]
+      },
+      "properties": {
+        "OBJECTID_1": 22,
+        "OBJECTID": 60,
+        "SCAMIN": 0,
+        "EXPSOU": " ",
+        "NOBJNM": "西沙永兴",
+        "OBJNAM": " ",
+        "QUASOU": " ",
+        "SOUACC": 0,
+        "STATUS": " ",
+        "TECSOU": " ",
+        "NTXTDS": " ",
+        "TXTDSC": " ",
+        "INFORM": " ",
+        "NINFOM": " ",
+        "SORDAT": " ",
+        "SORIND": " ",
+        "Depth": 60,
+        "R": 60
+      },
+      "id": 21
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          112.72616650000009,
+          16.672166700000048
+        ]
+      },
+      "properties": {
+        "OBJECTID_1": 23,
+        "OBJECTID": 61,
+        "SCAMIN": 0,
+        "EXPSOU": " ",
+        "NOBJNM": "东岛",
+        "OBJNAM": " ",
+        "QUASOU": " ",
+        "SOUACC": 0,
+        "STATUS": " ",
+        "TECSOU": " ",
+        "NTXTDS": " ",
+        "TXTDSC": " ",
+        "INFORM": " ",
+        "NINFOM": " ",
+        "SORDAT": " ",
+        "SORIND": " ",
+        "Depth": 61,
+        "R": 60
+      },
+      "id": 22
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          111.70971650000007,
+          16.453049700000065
+        ]
+      },
+      "properties": {
+        "OBJECTID_1": 24,
+        "OBJECTID": 62,
+        "SCAMIN": 0,
+        "EXPSOU": " ",
+        "NOBJNM": "琛航岛",
+        "OBJNAM": " ",
+        "QUASOU": " ",
+        "SOUACC": 0,
+        "STATUS": " ",
+        "TECSOU": " ",
+        "NTXTDS": " ",
+        "TXTDSC": " ",
+        "INFORM": " ",
+        "NINFOM": " ",
+        "SORDAT": " ",
+        "SORIND": " ",
+        "Depth": 62,
+        "R": 60
+      },
+      "id": 23
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          111.19778300000007,
+          15.78361650000005
+        ]
+      },
+      "properties": {
+        "OBJECTID_1": 25,
+        "OBJECTID": 63,
+        "SCAMIN": 0,
+        "EXPSOU": " ",
+        "NOBJNM": "中建岛",
+        "OBJNAM": " ",
+        "QUASOU": " ",
+        "SOUACC": 0,
+        "STATUS": " ",
+        "TECSOU": " ",
+        "NTXTDS": " ",
+        "TXTDSC": " ",
+        "INFORM": " ",
+        "NINFOM": " ",
+        "SORDAT": " ",
+        "SORIND": " ",
+        "Depth": 63,
+        "R": 60
+      },
+      "id": 24
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          109.97610000000009,
+          20.442300000000046
+        ]
+      },
+      "properties": {
+        "OBJECTID_1": 26,
+        "OBJECTID": 69,
+        "SCAMIN": 0,
+        "EXPSOU": " ",
+        "NOBJNM": "流沙港",
+        "OBJNAM": " ",
+        "QUASOU": " ",
+        "SOUACC": 0,
+        "STATUS": " ",
+        "TECSOU": " ",
+        "NTXTDS": " ",
+        "TXTDSC": " ",
+        "INFORM": " ",
+        "NINFOM": " ",
+        "SORDAT": " ",
+        "SORIND": " ",
+        "Depth": 0,
+        "R": 60
+      },
+      "id": 25
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          109.70601666700009,
+          21.013883333000024
+        ]
+      },
+      "properties": {
+        "OBJECTID_1": 27,
+        "OBJECTID": 70,
+        "SCAMIN": 0,
+        "EXPSOU": " ",
+        "NOBJNM": "江洪港",
+        "OBJNAM": " ",
+        "QUASOU": " ",
+        "SOUACC": 0,
+        "STATUS": " ",
+        "TECSOU": " ",
+        "NTXTDS": " ",
+        "TXTDSC": " ",
+        "INFORM": " ",
+        "NINFOM": " ",
+        "SORDAT": " ",
+        "SORIND": " ",
+        "Depth": 0,
+        "R": 60
+      },
+      "id": 26
+    }
+  ]
+}
