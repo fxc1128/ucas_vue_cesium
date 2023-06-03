@@ -21,6 +21,7 @@ export default {
   data() {
     return {
       removeImageryLayers: [],
+      activeTool: null,
     };
   },
   mounted: function () {
@@ -317,6 +318,7 @@ export default {
       }
     },
     exportShape: function () {
+      let _this = this;
       // 假设您已经绘制了一些要素并将它们存储在一个名为“entities”的数组中
       const entities = this.viewer.entities.values;
 
@@ -352,7 +354,7 @@ export default {
         } else if (entity.position) {
           // 点要素
           type = 'Point';
-          const position = entity.position.getValue();
+          const position = entity.position.getValue(_this.viewer.clock.currentTime);
           const cartographic = Cesium.Cartographic.fromCartesian(position);
           const longitude = Cesium.Math.toDegrees(cartographic.longitude);
           const latitude = Cesium.Math.toDegrees(cartographic.latitude);
